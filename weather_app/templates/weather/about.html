@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+    
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero is-primary">
+        <br>
+        <div class="how-to">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>About Weather Check</h3>
+                    </div>
+                </div>
+            <br>
+           <div class="row">
+               <div class="col-md-12">
+                   <p>
+                       This web app allows you to check the weather around the world using python requests and open weather map API.<br>
+                       It displays the current weather for different cities in different locations. <br>
+                       You can type into the search bar and see if the city weather is availble, if so it will appear below. <br>
+                       You can add and remove different cities from this weather app. 
+                   </p>
+               </div>
+           </div>
+           <br>
+           <div class="row">
+               <div class="col-md-12">
+                   <p>Enjoy Weather Check! </p>
+               </div>
+           </div>
+       </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>
